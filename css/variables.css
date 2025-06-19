@@ -141,7 +141,7 @@
     
     /* Component Specific */
     --header-height: 80px;
-    --hero-height: 100vh;
+    --hero-height: 75vh;
     --section-padding-y: var(--space-20);
     --section-padding-x: var(--space-6);
     

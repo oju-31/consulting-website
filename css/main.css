@@ -13,7 +13,7 @@ body {
 .container {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: 0 var(--section-padding-x);
+    padding: 0 var(--space-8);
 }
 
 /* Section Base */
@@ -256,15 +256,16 @@ body {
     align-items: center;
     max-width: var(--container-max);
     margin: 0 auto;
+    padding: 0 var(--space-12);
 }
 
 .section-content.reverse {
-    direction: rtl;
-}
-
-.section-content.reverse > * {
     direction: ltr;
 }
+
+/* .section-content.reverse > * {
+    direction: rtl;
+} */
 
 .section-title {
     font-size: var(--font-size-4xl);

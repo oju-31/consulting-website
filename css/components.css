@@ -571,3 +571,20 @@
         border-width: 2px;
     }
 }
+
+.character-counter {
+    font-size: var(--font-size-xs);
+    color: var(--gray-500);
+    text-align: right;
+    margin-top: var(--space-1);
+    transition: color var(--transition-fast);
+}
+
+.character-counter.warning {
+    color: #f59e0b;
+}
+
+.character-counter.error {
+    color: #ef4444;
+    font-weight: var(--font-weight-medium);
+}

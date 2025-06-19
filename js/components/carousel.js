@@ -77,7 +77,7 @@ function initProductCarousel() {
     updateCarouselContent(0);
     
     // Add product indicators
-    createProductIndicators();
+    // createProductIndicators();
     
     // Add loading states
     addLoadingStates();
@@ -178,7 +178,7 @@ function createProductIndicators() {
         indicatorsContainer.appendChild(indicator);
     });
     
-    carousel.appendChild(indicatorsContainer);
+    // carousel.appendChild(indicatorsContainer);
 }
 
 // Update product indicators

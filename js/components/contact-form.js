@@ -449,8 +449,15 @@ function initFormEnhancements() {
 // Character counter
 function addCharacterCounter(textarea, maxLength) {
     const container = textarea.parentElement;
+    
+    // Check if counter already exists to prevent duplicates
+    if (container.querySelector('.character-counter')) {
+        return;
+    }
+    
     const counter = document.createElement('div');
     counter.className = 'character-counter';
+    counter.style.display = 'none'; // Initially hidden
     counter.textContent = `0 / ${maxLength}`;
     
     container.appendChild(counter);
@@ -459,12 +466,23 @@ function addCharacterCounter(textarea, maxLength) {
         const length = textarea.value.length;
         counter.textContent = `${length} / ${maxLength}`;
         
+        // Only show counter when approaching limits or over limits
+        if (length < 50 && length > maxLength * 0.8) {
+            counter.style.display = 'block';
+        } else if (length >= 50) {
+            counter.style.display = 'block';
+        } else {
+            counter.style.display = 'none';
+        }
+        
+        // Warning when approaching limit
         if (length > maxLength * 0.9) {
             counter.classList.add('warning');
         } else {
             counter.classList.remove('warning');
         }
         
+        // Error when over limit
         if (length > maxLength) {
             counter.classList.add('error');
         } else {
