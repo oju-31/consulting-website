@@ -408,7 +408,7 @@ function initCarouselAutoplay() {
     carousel.addEventListener('focusout', resumeAutoplay);
     
     // Add autoplay controls
-    addAutoplayControls();
+    // addAutoplayControls();
 }
 
 function startAutoplay() {

@@ -368,6 +368,16 @@ body {
     z-index: 3;
 }
 
+.product-content {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+    max-width: var(--container-max);
+    margin: 0 auto; */
+    padding: 0 var(--space-12);
+}
+
 .carousel-btn {
     width: 48px;
     height: 48px;
@@ -393,6 +403,7 @@ body {
     grid-template-columns: 300px 1fr;
     gap: var(--space-16);
     align-items: center;
+    padding: 0 var(--space-12);
 }
 
 .product-icon {
@@ -497,6 +508,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-16);
     align-items: center;
+    padding: 0 var(--space-24);
 }
 
 .contact-title {
